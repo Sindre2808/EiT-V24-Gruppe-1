@@ -11,7 +11,7 @@ import 'leaflet/dist/leaflet.css'
 const Map = () => {
     return (
         <div>
-            <MapContainer>
+            <MapContainer style={{height:"600px"}} center={[63.415368, 10.398524]} zoom={13}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -27,9 +27,9 @@ const Map = () => {
                         shadowUrl: MarkerShadow.src,
                         shadowSize: [41, 41],
                     })
-                } position={[63.446827, 10.421906]}>
-                     <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                } position={[63.416168, 10.401749]}>
+                    <Popup>
+                        Position: (63.416168, 10.401749) <br /> Humidity: Moren din er mann
                     </Popup>
                 </Marker>
             </MapContainer>
